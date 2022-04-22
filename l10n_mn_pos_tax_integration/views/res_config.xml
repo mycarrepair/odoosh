@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">res.config.settings.form.inherit.point_of_sale</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="point_of_sale.res_config_settings_view_form"/>
+        <field name="arch" type="xml">         
+            <div name="taxes_setting_container" position="after">
+                <h2>Mongolian Tax Integration</h2>
+                <div class="row mt16 o_settings_container" name="mn_pos_tax_integration" string="Mongolian Tax Integration">
+                  <div class="col-12 col-lg-6 o_setting_box" id="default_mongolia_tax_setting" title="Mongolian Tax Integration.">
+                      <div class="o_setting_right_pane">
+                          <div>
+                                <label for="mn_pos_tax_vat_id" string="VAT"/>
+                                <div class="content-group">
+                                    <field name="mn_pos_tax_vat_id" options="{'no_create_edit': True, 'no_open': True}" class="oe_inline"/>
+                                </div>
+                                <label for="mn_pos_tax_vatx_id" string="VAT Exempt"/>
+                                <div class="content-group">
+                                    <field name="mn_pos_tax_vatx_id" options="{'no_create_edit': True, 'no_open': True}" class="oe_inline" colspan="4" nolabel="1"/>
+                                </div>
+                                <label for="mn_pos_tax_vatz_id" string="VAT 0%"/>
+                                <div class="content-group">
+                                    <field name="mn_pos_tax_vatz_id" options="{'no_create_edit': True, 'no_open': True}" class="oe_inline" colspan="4" nolabel="1"/>
+                                </div>
+                                <label for="mn_pos_tax_cct_id" string="CCT"/>
+                                <div class="content-group">
+                                    <field name="mn_pos_tax_cct_id" options="{'no_create_edit': True, 'no_open': True}" class="oe_inline" colspan="4" nolabel="1"/>
+                                </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-12 col-lg-6 o_setting_box" id="mongolia_proxy_setting">
+                    <label for="mn_pos_tax_return_proxy_ip" string="IP of Return PosApi Proxy"/>
+                        <div class="content-group">
+                            <field name="mn_pos_tax_return_proxy_ip" class="oe_inline" colspan="4" nolabel="1"/>
+                        </div>
+                        <label for="mn_pos_tax_return_proxy_port" string="Port of Return PosApi Proxy"/>
+                        <div class="content-group">
+                            <field name="mn_pos_tax_return_proxy_port" class="oe_inline" colspan="4" nolabel="1"/>
+                        </div>
+                        <div class="o_setting_left_pane">
+                            <field name="mn_pos_tax_multi_sellers"/>
+                        </div>
+                        <div class="o_setting_right_pane">
+                            <label for="mn_pos_tax_multi_sellers" string="Multi Sellers"/>
+                        </div>
+                  </div>
+                </div>
+            </div>
+        </field>
+    </record>
+</odoo>

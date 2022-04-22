@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <record id="mn_pos_tax_vatz_product_code_view_tree" model="ir.ui.view">
+        <field name="name">VAT Zero Product Code Tree</field>
+        <field name="model">mn.pos.tax.vatz.product.code</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="code"/>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="mn_pos_tax_vatz_product_code_view_form" model="ir.ui.view">
+        <field name="name">VAT Zero Product Code Form</field>
+        <field name="model">mn.pos.tax.vatz.product.code</field>
+        <field name="arch" type="xml">
+            <form>
+                <div>
+                    <field name="code"/>
+                    <field name="name"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="mn_pos_tax_vatz_product_code_view_filter" model="ir.ui.view">
+        <field name="name">VAT Zero Product Code Filter</field>
+        <field name="model">mn.pos.tax.vatz.product.code</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name" string="Code" filter_domain="['|',('code','ilike',self),('name','ilike',self)]"/>
+            </search>
+        </field>
+    </record>
+</odoo>

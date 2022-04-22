@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+        <record id="mn_pos_tax_vatx_product_code_301" model="mn.pos.tax.vatx.product.code">
+            <field name="code">301</field>
+            <field name="name">Гаалийн байгууллагаас баталсан, зорчигчдод татваргүй нэвтрүүлэхийг зөвшөөрсөн хэмжээ бүхий биедээ авч яваа хувийн хэрэглээний бараа</field>
+        </record>
+        <record id="mn_pos_tax_vatx_product_code_302" model="mn.pos.tax.vatx.product.code">
+            <field name="code">302</field>
+            <field name="name">Монгол Улсын нутаг дэвсгэрт байнга оршин суудаг гадаадын дипломат төлөөлөгчийн болон консулын газар, Нэгдсэн үндэсний байгууллага, түүний төрөлжсөн салбарын хэрэгцээнд зориулан импортоор оруулсан бараа</field>
+        </record>
+        <record id="mn_pos_tax_vatx_product_code_303" model="mn.pos.tax.vatx.product.code">
+            <field name="code">303</field>
+            <field name="name">Монгол Улсаас гадаад улсад суугаа дипломат төлөөлөгчийн болон консулын газрын албан ажлын болон тэдгээрт ажиллагсдын хувийн хэрэгцээнд зориулан худалдаж авсан бараа, ажил, үйлчилгээг тухайн улсад албан татвараас чөлөөлдөг бол тэр улсаас Монгол Улсад суугаа дипломат төлөөлөгчийн болон консулын газрын албан ажлын болон тэдгээрт ажиллагсдын хувийн хэрэгцээнд зориулж Монгол Улсын нутаг дэвсгэрт худалдан авсан бараа, гүйцэтгэсэн ажил, үзүүлсэн үйлчилгээ</field>
+        </record>
+        <record id="mn_pos_tax_vatx_product_code_304" model="mn.pos.tax.vatx.product.code">
+            <field name="code">304</field>
+            <field name="name">Гадаад улсын Засгийн газар, олон улсын байгууллагаас буцалтгүй болон хүмүүнлэгийн тусламж, хөнгөлөлттэй зээлээр авсан бараа</field>
+        </record>
+        <record id="mn_pos_tax_vatx_product_code_305" model="mn.pos.tax.vatx.product.code">
+            <field name="code">305</field>
+            <field name="name">Хөгжлийн бэрхшээлтэй иргэний хэрэглээнд зориулсан тусгай зориулалтын хэрэгсэл, тоног төхөөрөмж, автотээврийн хэрэгсэл</field>
+        </record>
+        <record id="mn_pos_tax_vatx_product_code_306" model="mn.pos.tax.vatx.product.code">
+            <field name="code">306</field>
+            <field name="name">Зэвсэгт хүчин, цагдаа, улсын аюулгүй байдлыг хангах, шүүхийн шийдвэр биелүүлэх байгууллагын хэрэгцээнд зориулан импортоор оруулж байгаа зэвсэг, тусгай техник хэрэгсэл</field>
+        </record>
+        <record id="mn_pos_tax_vatx_product_code_307" model="mn.pos.tax.vatx.product.code">
+            <field name="code">307</field>
+            <field name="name">Агаарын зорчигч тээврийн хөлөг, түүний сэлбэг</field>
+        </record>
+        <record id="mn_pos_tax_vatx_product_code_308" model="mn.pos.tax.vatx.product.code">
+            <field name="code">308</field>
+            <field name="name">Орон сууцны зориулалтаар ашиглаж байгаа байр буюу түүний хэсгийг борлуулсны орлого</field>
+        </record>
+        <record id="mn_pos_tax_vatx_product_code_309" model="mn.pos.tax.vatx.product.code">
+            <field name="code">309</field>
+            <field name="name">Гэрээлэгч болон туслан гүйцэтгэгч нь газрын тос, уламжлалт бус газрын тостой холбогдсон үйл ажиллагаанд зориулан хайгуулын нийт хугацаанд болон ашиглалтын эхний таван жилд импортолсон тусгай зориулалтын машин, техник хэрэгсэл, тоног төхөөрөмж, тоноглол, түүхий эд, материал, химийн болон тэсрэх бодис, сэлбэг хэрэгсэл</field>
+        </record>
+        <record id="mn_pos_tax_vatx_product_code_310" model="mn.pos.tax.vatx.product.code">
+            <field name="code">310</field>
+            <field name="name">Эмчилгээний зориулалтаар хэрэглэх цус, цусан бүтээгдэхүүн, эд эрхтэн</field>
+        </record>
+        <record id="mn_pos_tax_vatx_product_code_311" model="mn.pos.tax.vatx.product.code">
+            <field name="code">311</field>
+            <field name="name">Хийн түлш, түүний сав, тоног төхөөрөмж, тусгай зориулалтын машин механизм, техник хэрэгсэл, тоноглол</field>
+        </record>
+        <record id="mn_pos_tax_vatx_product_code_312" model="mn.pos.tax.vatx.product.code">
+            <field name="code">312</field>
+            <field name="name">Гадаад улсад захиалгаар хийлгэсэн Монгол Улсын үндэсний мөнгөн тэмдэгт</field>
+        </record>
+        <record id="mn_pos_tax_vatx_product_code_313" model="mn.pos.tax.vatx.product.code">
+            <field name="code">313</field>
+            <field name="name">Борлуулсан алт</field>
+        </record>
+        <record id="mn_pos_tax_vatx_product_code_315" model="mn.pos.tax.vatx.product.code">
+            <field name="code">315</field>
+            <field name="name">Эрдэм шинжилгээ, судалгааны ажлын туршилтын бүтээгдэхүүн</field>
+        </record>
+        <record id="mn_pos_tax_vatx_product_code_318" model="mn.pos.tax.vatx.product.code">
+            <field name="code">318</field>
+            <field name="name">Газар тариалан эрхлэгчийн дотооддоо тарьж борлуулсан үр тариа, төмс, хүнсний ногоо, суулгац, жимс жимсгэнэ, үйлдвэрлэсэн гурил</field>
+        </record>
+        <record id="mn_pos_tax_vatx_product_code_319" model="mn.pos.tax.vatx.product.code">
+            <field name="code">319</field>
+            <field name="name">Монгол Улсын нутаг дэвсгэрт үйлдвэрийн аргаар төхөөрч бэлтгэн дотооддоо борлуулсан тураг болон шулж ангилсан мах, боловсруулаагүй дотор эрхтэн, дайвар бүтээгдэхүүн</field>
+        </record>
+        <record id="mn_pos_tax_vatx_product_code_320" model="mn.pos.tax.vatx.product.code">
+            <field name="code">320</field>
+            <field name="name">Монгол Улсын нутаг дэвсгэрт дотоодын түүхий эдээр боловсруулан дотооддоо борлуулсан хүнсний сүү, сүүн бүтээгдэхүүн</field>
+        </record>
+        <record id="mn_pos_tax_vatx_product_code_401" model="mn.pos.tax.vatx.product.code">
+            <field name="code">401</field>
+            <field name="name">Валют солих үйлчилгээ</field>
+        </record>
+        <record id="mn_pos_tax_vatx_product_code_402" model="mn.pos.tax.vatx.product.code">
+            <field name="code">402</field>
+            <field name="name">Мөнгө хүлээн авах, шилжүүлэх, баталгаа, төлбөрийн нэхэмжлэл гаргах, вексель, хадгаламжийн данстай холбогдсон банкны үйлчилгээ</field>
+        </record>
+        <record id="mn_pos_tax_vatx_product_code_403" model="mn.pos.tax.vatx.product.code">
+            <field name="code">403</field>
+            <field name="name">Даатгал, даатгалын зуучлал, давхар даатгал, эд хөрөнгийн бүртгэлийн үйлчилгээ</field>
+        </record>
+        <record id="mn_pos_tax_vatx_product_code_404" model="mn.pos.tax.vatx.product.code">
+            <field name="code">404</field>
+            <field name="name">Үнэт цаас, хувьцаа гаргах, шилжүүлэх, борлуулах, хүлээн авах, тэдгээрт баталгаа гаргах үйлчилгээ</field>
+        </record>
+        <record id="mn_pos_tax_vatx_product_code_405" model="mn.pos.tax.vatx.product.code">
+            <field name="code">405</field>
+            <field name="name">Зээл олгох үйлчилгээ</field>
+        </record>
+        <record id="mn_pos_tax_vatx_product_code_406" model="mn.pos.tax.vatx.product.code">
+            <field name="code">406</field>
+            <field name="name">Нийгмийн болон эрүүл мэндийн даатгалын сангийн мөнгөн хөрөнгийг байршуулсны хүүг олгох, шилжүүлэх үйлчилгээ</field>
+        </record>
+        <record id="mn_pos_tax_vatx_product_code_407" model="mn.pos.tax.vatx.product.code">
+            <field name="code">407</field>
+            <field name="name">Банкны болон банк бус санхүүгийн байгууллага, хадгаламж зээлийн хоршооны зээлийн хүү, санхүүгийн түрээсийн хүү, ногдол ашиг, зээлийн баталгааны хураамж, даатгалын гэрээний хураамж төлөх үйлчилгээ</field>
+        </record>
+        <record id="mn_pos_tax_vatx_product_code_408" model="mn.pos.tax.vatx.product.code">
+            <field name="code">408</field>
+            <field name="name">Орон сууцны зориулалтаар баригдсан зориулалтын дагуу ашиглагдаж байгаа байрыг болон түүний тодорхой хэсгийг хөлслүүлэх үйлчилгээ</field>
+        </record>
+        <record id="mn_pos_tax_vatx_product_code_409" model="mn.pos.tax.vatx.product.code">
+            <field name="code">409</field>
+            <field name="name">Боловсролын болон мэргэжлийн сургалт явуулах тусгай зөвшөөрөлтэй хувь хүн, хуулийн этгээдийн эрхлэн гүйцэтгэж байгаа дүрэмд нь заасан боловсрол, мэргэжил олгох үйлчилгээ</field>
+        </record>
+        <record id="mn_pos_tax_vatx_product_code_410" model="mn.pos.tax.vatx.product.code">
+            <field name="code">410</field>
+            <field name="name">Эрүүл мэндийн үйлчилгээ</field>
+        </record>
+        <record id="mn_pos_tax_vatx_product_code_411" model="mn.pos.tax.vatx.product.code">
+            <field name="code">411</field>
+            <field name="name">Шашны байгууллагын үйлчилгээ</field>
+        </record>
+        <record id="mn_pos_tax_vatx_product_code_412" model="mn.pos.tax.vatx.product.code">
+            <field name="code">412</field>
+            <field name="name">Төрийн байгууллагаас үзүүлж байгаа үйлчилгээ. Үүнд Засгийн газар, түүний агентлагууд, төсөвт байгууллагуудаас үзүүлж байгаа төрийн үйлчилгээ хамаарна</field>
+        </record>
+        <record id="mn_pos_tax_vatx_product_code_413" model="mn.pos.tax.vatx.product.code">
+            <field name="code">413</field>
+            <field name="name">Автотээврийн тухай хуулийн 3.1.11-д заасан нийтийн тээврийн үйлчилгээ</field>
+        </record>
+        <record id="mn_pos_tax_vatx_product_code_414" model="mn.pos.tax.vatx.product.code">
+            <field name="code">414</field>
+            <field name="name">Аялал жуулчлалын үйл ажиллагаа эрхэлдэг хуулийн этгээд гадаад улсын аялал жуулчлалын байгууллагатай гэрээ байгуулж жуулчдыг нь хүлээн авах, уг үйлчилгээг төлөвлөх, сурталчлах, бичиг баримтыг нь бүрдүүлэх зэрэг гадаадын жуулчдад үзүүлсэн /туроператор/ үйлчилгээ</field>
+        </record>
+        <record id="mn_pos_tax_vatx_product_code_419" model="mn.pos.tax.vatx.product.code">
+            <field name="code">419</field>
+            <field name="name">Монгол Улсын нутаг дэвсгэрт үйлдвэрлэсэн, үйлдвэрлэн борлуулсан жижиг, дунд үйлдвэрийн үйлдвэрлэлийн зориулалт бүхий тоног төхөөрөмж, сэлбэг хэрэгсэл</field>
+        </record>
+        <record id="mn_pos_tax_vatx_product_code_421" model="mn.pos.tax.vatx.product.code">
+            <field name="code">421</field>
+            <field name="name">Энэ хуулийн 12.1.7-д зааснаас бусад экспортод гаргасан ашигт малтмалын бүтээгдэхүүн</field>
+        </record>
+        <record id="mn_pos_tax_vatx_product_code_423" model="mn.pos.tax.vatx.product.code">
+            <field name="code">423</field>
+            <field name="name">Инновацийн төслөөр дотоод, гадаадын зах зээлд шинэ бараа, бүтээгдэхүүний үйлдвэрлэл явуулахад шаардлагатай, дотоодод үйлдвэрлэдэггүй түүхий эд, материал, урвалж бодис</field>
+        </record>
+        <record id="mn_pos_tax_vatx_product_code_424" model="mn.pos.tax.vatx.product.code">
+            <field name="code">424</field>
+            <field name="name">Импортоор оруулж байгаа бөөрөнхий мод, гуалин, зүсмэл материал, банз, модон бэлдэц, хагас боловсруулсан модон материал</field>
+        </record>
+        <record id="mn_pos_tax_vatx_product_code_425" model="mn.pos.tax.vatx.product.code">
+            <field name="code">425</field>
+            <field name="name">Экспортод гаргасан түүхий болон угаасан, самнасан ноолуур, арьс шир</field>
+        </record>
+        <record id="mn_pos_tax_vatx_product_code_426" model="mn.pos.tax.vatx.product.code">
+            <field name="code">426</field>
+            <field name="name">Соёлын өвийг судалж шинжлэх, сэргээн засварлахад ашиглах материал, техник, тоног төхөөрөмж, бодис, багаж хэрэгсэл</field>
+        </record>
+        <record id="mn_pos_tax_vatx_product_code_427" model="mn.pos.tax.vatx.product.code">
+            <field name="code">427</field>
+            <field name="name">Нэг сарын хөдөлмөрийн хөлсний доод хэмжээг 10 дахин, зөөврийн компьютерийн хувьд 30 дахин нэмэгдүүлснээс дээшгүй үнийн дүнтэй, ижил төрлийн хоёроос илүүгүй бараа бүхий хувь хүний нэр дээр илгээсэн улс хоорондын шуудангийн илгээмж</field>
+        </record>
+        <record id="mn_pos_tax_vatx_product_code_428" model="mn.pos.tax.vatx.product.code">
+            <field name="code">428</field>
+            <field name="name">Газрын тос болон уламжлалт бус газрын тостой холбогдсон тайлан материал, дээж болон газрын тос</field>
+        </record>
+        <record id="mn_pos_tax_vatx_product_code_429" model="mn.pos.tax.vatx.product.code">
+            <field name="code">429</field>
+            <field name="name">Чөлөөт бүсэд зорчигчийн худалдаж авсан гурван сая төгрөг хүртэл үнийн дүнтэй бараа</field>
+        </record>
+        <record id="mn_pos_tax_vatx_product_code_430" model="mn.pos.tax.vatx.product.code">
+            <field name="code">430</field>
+            <field name="name">Соёлын өвийг сэргээн засварлах үйлчилгээ</field>
+        </record>
+        <record id="mn_pos_tax_vatx_product_code_431" model="mn.pos.tax.vatx.product.code">
+            <field name="code">431</field>
+            <field name="name">Оршуулгын үйлчилгээ</field>
+        </record>
+        <record id="mn_pos_tax_vatx_product_code_432" model="mn.pos.tax.vatx.product.code">
+            <field name="code">432</field>
+            <field name="name">Монгол Улсын Засгийн газраас гадаад улсын Засгийн газар, олон улсын байгууллагатай байгуулж соёрхон баталсан олон улсын гэрээний дагуу санхүүжигдэх бараа, ажил, үйлчилгээ</field>
+        </record>
+    </data>
+</openerp>

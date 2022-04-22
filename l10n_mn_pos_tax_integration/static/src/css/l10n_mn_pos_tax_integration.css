@@ -1,0 +1,42 @@
+.mn_pos_tax_vatpayer_popup {
+    width: 560px !important;
+    height: 350px !important;
+    margin: auto;
+    margin-top: 70px;
+    font-size: 11px;
+    background-color: #F0EEEE;
+}
+
+.mn_pos_tax_vatpayer_block {
+    margin: 10px;
+}
+
+.mn_pos_tax_vatpayer_button {
+    color: #727272; /*#929292;*/
+    text-align: center;
+    width: 184px;
+    padding: 20px;
+    margin: 10px;
+    border: solid 2px rgba(60,60,60,0.1);
+    cursor: pointer;
+}
+
+.mn_pos_tax_vatpayer_button:hover {
+    background: #6EC89B;
+    color: #FFF;
+}
+
+.mn_pos_tax_vatpayer_button_float1 {
+    float: left;
+}
+
+.mn_pos_tax_vatpayer_button_float2 {
+    float: right;
+}
+
+.mn_pos_tax_vatpayer_button_text {
+    font-weight:700;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 5px;
+}

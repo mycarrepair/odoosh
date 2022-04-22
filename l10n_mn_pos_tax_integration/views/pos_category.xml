@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <record id="product_pos_category_form_view" model="ir.ui.view">
+        <field name="name">pos.category.form</field>
+        <field name="model">pos.category</field>
+        <field name="inherit_id" ref="point_of_sale.product_pos_category_form_view" />
+        <field name="arch" type="xml">
+            <field name="sequence" position="after">
+                <field name="mn_pos_tax_multi_sellers" invisible="1"/>
+                <field name="mn_pos_tax_seller_id"
+                    attrs="{'invisible': [('mn_pos_tax_multi_sellers', '=', False)]}"/>                    
+            </field>
+        </field>
+    </record>
+</odoo>

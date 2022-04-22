@@ -1,0 +1,10 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_mn_pos_tax_order_user,mn.pos.tax.order_user,model_mn_pos_tax_order,point_of_sale.group_pos_user,1,1,1,0
+access_mn_pos_tax_order_manager,mn.pos.tax.order_manager,model_mn_pos_tax_order,point_of_sale.group_pos_manager,1,1,1,0
+access_mn_pos_tax_order_line_user,mn.pos.tax.order.line_user,model_mn_pos_tax_order_line,point_of_sale.group_pos_user,1,0,1,0
+access_mn_pos_tax_order_line_manager,mn.pos.tax.order.line_manager,model_mn_pos_tax_order_line,point_of_sale.group_pos_manager,1,1,1,1
+access_mn_pos_tax_error_user,mn.pos.tax.error_user,model_mn_pos_tax_error,point_of_sale.group_pos_user,1,0,1,0
+access_mn_pos_tax_error_manager,mn.pos.tax.error_manager,model_mn_pos_tax_error,point_of_sale.group_pos_manager,1,0,1,0
+access_mn_pos_tax_universal_category_code_user,mn.pos.tax.universal.category.code_user,model_mn_pos_tax_universal_category_code,point_of_sale.group_pos_user,1,0,1,0
+access_mn_pos_tax_vatx_product_code_user,mn.pos.tax.vatx.product.code_user,model_mn_pos_tax_vatx_product_code,point_of_sale.group_pos_user,1,0,1,0
+access_mn_pos_tax_vatz_product_code_user,mn.pos.tax.vatz.product.code_user,model_mn_pos_tax_vatz_product_code,point_of_sale.group_pos_user,1,0,1,0

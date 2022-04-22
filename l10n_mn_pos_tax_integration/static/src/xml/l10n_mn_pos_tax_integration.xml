@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<templates id="template" xml:space="preserve">
+    <t t-name="OrderReceipt" t-inherit="point_of_sale.OrderReceipt" t-inherit-mode="extension" owl="1">
+        <t t-jquery='.pos-sale-ticket .ticket-date' t-operation='replace'>
+            <td class="ticket-date">Огноо: <t t-esc="receipt.print_date"/></td>
+        </t>
+        <t t-jquery='.pos-sale-ticket .receipt-total > tbody' t-operation='prepend'>
+            <t t-set="has_cct" t-value="false" />
+        </t>
+        <t t-jquery='.pos-sale-ticket .receipt-total > tbody' t-operation='inner'>            
+            <t t-set="has_cct" t-value="0" />
+            <t t-foreach="receipt.tax_details" t-as="taxdetail">
+                <tr>
+                    <td class="pos-right-align"><t t-esc="taxdetail.name" />:</td>
+                    <td></td>
+                    <td class="pos-right-align">
+                        <t t-set="tax_amt" t-value="widget.format_currency_no_symbol(taxdetail.amount).replace('.00', '')" />
+                        <t t-esc="tax_amt.includes('.') &#38;&#38; tax_amt.endsWith('0') ? tax_amt.slice(0,-1) : tax_amt"/>
+                    </td>
+                    <td></td>
+
+                    <t t-if="taxdetail.tax.mn_pos_tax_type === 'cct'">
+                        <t t-set="has_cct" t-value="1" />
+                    </t>
+                </tr>
+            </t>
+
+            <t t-if="receipt.mn_pos_tax_vatx_name">
+                <tr>
+                    <td class="pos-right-align"><t t-esc="receipt.mn_pos_tax_vatx_name" />:</td>
+                    <td></td>
+                    <td class="pos-right-align">0</td>
+                    <td></td>
+                </tr>
+            </t>
+
+            <t t-if="receipt.mn_pos_tax_vatz_name">
+                <tr>
+                    <td class="pos-right-align"><t t-esc="receipt.mn_pos_tax_vatz_name" />:</td>
+                    <td></td>
+                    <td class="pos-right-align">0</td>
+                    <td></td>
+                </tr>
+            </t>
+
+            <t t-if="!has_cct">
+                <t t-foreach="widget.pos.taxes" t-as="tax">
+                    <t t-if="tax.mn_pos_tax_type === 'cct'">
+                        <tr>
+                            <td class="pos-right-align"><t t-esc="tax.name" />:</td>
+                            <td></td>
+                            <td class="pos-right-align">0</td>
+                            <td></td>
+                        </tr>
+                    </t>
+                </t>
+            </t>
+        </t>
+        <t t-jquery='.pos-sale-ticket .receipt-footer' t-operation='before'>
+            <br/>
+            <t t-if="receipt.mn_pos_tax_vatpayer">
+                <table>
+                    <tbody>
+                        <tr>
+                            <t t-if="receipt.mn_pos_tax_vatpayer.tin">
+                                <td>НӨАТ суутган төлөгч: <t t-esc="receipt.mn_pos_tax_vatpayer.name" /></td>
+                                <td class="pos-right-align">ТТД: <t t-esc="receipt.mn_pos_tax_vatpayer.tin" /></td>
+                            </t>
+                            <t t-if="receipt.mn_pos_tax_vatpayer.ebarimt_id">
+                                <td></td>
+                                <td class="pos-right-align">EBARIMT.MN ID: <t t-esc="receipt.mn_pos_tax_vatpayer.ebarimt_id" /></td>
+                            </t>
+                        </tr>
+                        <tr><td class="tbody-bottom-spacer"></td></tr>
+                    </tbody>
+                </table>
+            </t>
+            <t t-if="receipt.mn_pos_tax_orders">
+                <table class="mn_pos_tax_orders">
+                    <tbody>
+                        <t t-foreach="receipt.mn_pos_tax_orders" t-as="mn_pos_tax_order">
+                            <tr>
+                                <td colspan="2">
+                                    PUID: <t t-esc="mn_pos_tax_order.billid" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="mn_pos_tax_qrdata" t-att-qrdata="mn_pos_tax_order.qrdata">
+                                        <canvas></canvas>
+                                    </div>
+                                </td>
+                                <td class="pos-left-align">
+                                    <t t-if="mn_pos_tax_order.lottery">
+                                        <div><b>Lottery:</b> <t t-esc="mn_pos_tax_order.lottery" /></div>
+                                    </t>
+                                    <t t-if="mn_pos_tax_order.amount">
+                                        <div>
+                                            <t t-set="lottery_amt" t-value="widget.format_currency_no_symbol(mn_pos_tax_order.amount).replace('.00', '')" />
+                                            <b>Amount:</b> <t t-esc="lottery_amt.includes('.') &#38;&#38; lottery_amt.endsWith('0') ? lottery_amt.slice(0,-1) : lottery_amt"/>
+                                        </div>
+                                    </t>
+                                </td>
+                            </tr>
+                        </t>
+                    </tbody>
+                </table>
+            </t>
+        </t>
+    </t>
+
+    <t t-extend="PaymentScreenWidget">
+        <t t-jquery=".js_set_customer" t-operation="after">
+            <div class='button js_set_mn_pos_tax_vatpayer'>
+                <i class='fa fa-eye' />
+
+                <span class='js_mn_pos_tax_vatpayer'>
+                    <t t-if="widget.pos.get_order()">
+                        <t t-esc="widget.pos.get_order().get_mn_pos_tax_vatpayer_string()" />
+                    </t>
+                </span>
+            </div>
+        </t>
+    </t>
+
+    <t t-name="MnPosTaxPayerPopupWidget">
+        <div class="modal-dialog">
+            <div class="popup mn_pos_tax_vatpayer_popup">
+                <p class="title">Choose Your Option</p>
+                <div class="mn_pos_tax_vatpayer_block">
+                    <div class="mn_pos_tax_vatpayer_button mn_pos_tax_vatpayer_button_float1" id="mn_pos_tax_register_tin">
+                        <!--<img src="/l10n_mn_pos_tax_integration/static/src/img/mta.png" width="150" height="100"/>-->
+                        <div class="mn_pos_tax_vatpayer_button_text">
+                            TIN
+                        </div>
+                    </div>
+                    <div class="mn_pos_tax_vatpayer_button mn_pos_tax_vatpayer_button_float2" id="mn_pos_tax_register_ebarimt_id">
+                        <!--<img src="/l10n_mn_pos_tax_integration/static/src/img/ebarimt.png" width="150" height="100"/>-->
+                        <div class="mn_pos_tax_vatpayer_button_text">
+                            EBARIMT.MN ID
+                        </div>
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="button cancel">
+                        Cancel
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+
+    <t t-name="MnPosTaxTINPopupWidget">
+        <div class="modal-dialog">
+            <div class="popup popup-textinput">
+                <p class="title"><t t-esc=" widget.options.title || '' " /><br/></p>
+
+                <input id="mn_pos_tax_vatpayer_tin" type='text' t-att-value="widget.options.tin || ''" placeholder="TIN" /><br/><br/>
+                <input id="mn_pos_tax_vatpayer_name" type='text' t-att-value="widget.options.name || ''" placeholder="NAME" /><br/><br/>
+
+                <div class="footer">
+                    <div class="button confirm">
+                        Ok
+                    </div>
+                    <div class="button cancel">
+                        Cancel
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+
+    <t t-name="MnPosTaxEbarimtIDPopupWidget">
+        <div class="modal-dialog">
+            <div class="popup popup-textinput">
+                <p class="title"><t t-esc=" widget.options.title || '' " /><br/></p>
+
+                <input id="mn_pos_tax_ebarimt_id" type='text' t-att-value="widget.options.ebarimt_id || ''" placeholder="ID" /><br/><br/>
+
+                <div class="footer">
+                    <div class="button confirm">
+                        Ok
+                    </div>
+                    <div class="button cancel">
+                        Cancel
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+</templates>
